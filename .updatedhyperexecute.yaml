@@ -1,0 +1,130 @@
+version: "0.1"
+user: riteshchaurasia
+key: MB1eBIWI9VGg4EFOIyrNhjjWd8WhSAIpYUGapQtyzn616BNBCc
+testSuites: []
+pre: [echo "hello", sleep 15]
+preDirectives:
+    commands: [echo "hello", sleep 15]
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+post: [cat .new.yaml]
+postDirectives:
+    commands: [cat .new.yaml]
+    shell: ""
+    workingDirectory: ""
+runson: linux
+autosplit: true
+concurrency: 80
+testDiscovery:
+    command: cat stages.txt
+    mode: static
+    type: raw
+testDiscoveryResult:
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+    - "1"
+testRunnerCommand: python3 main.py $test
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+maxRetries: 1
+jobID: b5e85930-4889-479b-9ddf-3780257a35b5
+codeDirectory: python
+framework:
+    name: ""
+    flags: []
+    discoveryFlags: []
+    discoveryType: ""
+    runnerFlags: []
+    workingDirectory: ""
+    isTestNGXMLSuite: false
+    defaultReports: true
+    additional_args: null
+    licenseKey: ""
+    userdefinediscovery: false
+    toscaArgs: null
+cypress: false
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: false

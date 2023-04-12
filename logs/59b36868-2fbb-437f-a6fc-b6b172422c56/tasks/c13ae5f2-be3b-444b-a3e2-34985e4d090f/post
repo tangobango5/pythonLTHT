@@ -1,0 +1,23 @@
+******************* cat .new.yaml *******************
+---
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: win
+autosplit: true
+retryOnFailure: false
+maxRetries: 2
+concurrency: 2
+testRunnerCommand: python main.py
+pre:
+  - pwd
+mergeArtifacts: true
+stripParentDirectory: true
+post:
+  - cat .new.yaml
+version: "0.1"
+testDiscovery:
+  type: raw
+  mode: static
+  command: snooper --featureFilePaths=src/main/**/ --frameWork=java --ignoredTags=@data1 @data2 @data3 @data4 @data5 @example @sample | sed -n 1,'20p'
+******************* sleep 300 *******************

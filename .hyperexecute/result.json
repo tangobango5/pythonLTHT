@@ -1,0 +1,105 @@
+{
+    "id": "34c350e5-6ec7-4984-8e12-e056da956d3a",
+    "created_at": "2023-04-12T11:25:46Z",
+    "update_at": "2023-04-12T11:28:31Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2023-04-12T11:25:56Z",
+    "end_time": "2023-04-12T11:28:31Z",
+    "summary": {
+        "total_time": 155000000000,
+        "execution_time": 155000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 155000000000,
+        "jobTestExecutionTime": "1m27s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "postrun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            }
+        },
+        "status": "completed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=34c350e5-6ec7-4984-8e12-e056da956d3a"
+    },
+    "tasks": [
+        {
+            "id": "0ef87f21-abdc-41bb-b84f-8f8b67c8e44a",
+            "os": "win",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2023-04-12T11:25:56Z",
+            "update_at": "2023-04-12T11:28:31Z",
+            "start_time": "2023-04-12T11:25:56Z",
+            "end_time": "2023-04-12T11:28:31Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "de93da1a-e498-40d2-ae1c-054137c539ba",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2023-04-12T11:25:58Z",
+                    "started_at": "2023-04-12T11:25:59Z",
+                    "updated_at": "2023-04-12T11:26:15Z",
+                    "order": 1
+                },
+                {
+                    "id": "395b65c8-b901-47b4-9eba-e83b883b2988",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2023-04-12T11:26:17Z",
+                    "started_at": "2023-04-12T11:26:19Z",
+                    "updated_at": "2023-04-12T11:26:20Z",
+                    "order": 2
+                },
+                {
+                    "id": "38328909-c117-4aaf-8499-7b8dc02ea563",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "1",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2023-04-12T11:26:22Z",
+                    "started_at": "2023-04-12T11:26:24Z",
+                    "updated_at": "2023-04-12T11:28:26Z",
+                    "order": 3
+                },
+                {
+                    "id": "91438c55-ffc6-4079-bb33-1db26780f325",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2023-04-12T11:26:22Z",
+                    "started_at": "2023-04-12T11:28:28Z",
+                    "updated_at": "2023-04-12T11:28:29Z",
+                    "order": 4
+                }
+            ]
+        }
+    ]
+}

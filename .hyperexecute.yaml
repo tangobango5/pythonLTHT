@@ -1,0 +1,35 @@
+---
+globalTimeout: 90
+testSuiteTimeout: 90
+testSuiteStep: 90
+runson: linux
+autosplit: true
+retryOnFailure: false
+maxRetries: 1
+concurrency: 80
+testRunnerCommand: python3 main.py $test
+# tunnel: true
+# tunnelOpts:
+#   global: true
+pre:
+  - echo "hello"
+  - sleep 15
+# mergeArtifacts: true
+# stripParentDirectory: true
+post:
+  - cat .new.yaml
+  # - sleep 600
+version: "0.1"
+testDiscovery:
+  type: raw
+  mode: static
+  command: cat stages.txt
+# checksum
+# folder to cache: artifacts
+# uploadArtefacts:
+#   - name: tango
+#     path:
+#       - artefact_test/
+# smartGrid: true
+# debug: true
+# tunnel: true

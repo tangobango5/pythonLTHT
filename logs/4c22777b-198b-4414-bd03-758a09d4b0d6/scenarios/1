@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "main.py", line 18, in <module>
+    driver = webdriver.Remote(command_executor=hub, desired_capabilities=desired_cap)
+  File "C:\HOSTED~1\windows\Python\37606B~1.9\x64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\HOSTED~1\windows\Python\37606B~1.9\x64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\HOSTED~1\windows\Python\37606B~1.9\x64\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\HOSTED~1\windows\Python\37606B~1.9\x64\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unable to find key: BrightdataUnsupportedCodes
+
+Command Failed

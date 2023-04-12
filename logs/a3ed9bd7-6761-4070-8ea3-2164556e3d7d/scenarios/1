@@ -1,0 +1,8 @@
+['main.py', '1']
+Traceback (most recent call last):
+  File "/Users/ltuser/foreman/python/main.py", line 63, in <module>
+    OneTest(desired_cap_edge)
+  File "/Users/ltuser/foreman/python/main.py", line 56, in OneTest
+    print(f"Startup time for {caps.browserName} chrome {end - begin} , {begin} , {end}")
+                              ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'browserName'
